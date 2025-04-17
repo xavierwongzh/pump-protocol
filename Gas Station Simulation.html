@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>Gas Station Simulation Model</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <!-- d3 is for data visualization -->
+  <script type="text/javascript" src="lib/d3.min.js"></script>
+  
+  <!-- Include Plotly for charting -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  <!-- custom styles for this application -->
+  <link rel="stylesheet" href="styles/Gas Station Simulation.css" media="screen">
+</head>
+<!-- Set class to official for more formal font; unofficial for informal font -->
+<body class="official bgColor6">
+  
+  <!-- The surface is the main playing field for the game -->
+  <svg id="surface" style="width:100%; height:100%;" xmlns="http://www.w3.org/2000/svg" version="1.1" onclick="toggleSimStep();">
+  </svg>
+  
+  <div id="title" style="position:absolute;bottom:0;left:0">
+    Gas Station Simulation by The Pump Protocol (The PP)
+  </div>
+  
+  <div id="controls" style="position:absolute;bottom:0;left:35%">
+    Animation Speed:
+    <input id="slider1" type="range" min="0" value="500" max="1000" step="10" onchange="redrawWindow();" />
+  </div>
+<!-- Gas Price Input -->
+<!-- <div id="gasPriceControl" style="position:absolute; top: 60px; left:35%; text-align:center; background-color:#f9f9f9; padding:10px; border:1px solid #ccc;">
+	<label for="gasPriceInput"><b>Gas Price ($ per litre):</b></label>
+	<input id="gasPriceInput" type="number" step="0.01" value="2.50">
+  </div> -->
+
+  <div id="probabilityControls" style="margin-top:40px; text-align:left;">
+	<div class="slider-group">
+	  <label for="arrivalSlider">Probability of Arrival:</label>
+	  <input id="arrivalSlider" type="range" min="0" max="1" step="0.01" value="0.2" autocomplete="off"
+			 oninput="document.getElementById('arrivalValue').textContent = this.value;">
+	  <span id="arrivalValue">0.20</span>
+	</div>
+	<div class="slider-group">
+	  <label for="departureSlider">Probability of Departure:</label>
+	  <input id="departureSlider" type="range" min="0" max="1" step="0.01" value="0.28" autocomplete="off"
+			 oninput="document.getElementById('departureValue').textContent = this.value;">
+	  <span id="departureValue">0.28</span>
+	</div>
+	<div class="slider-group">
+	  <label for="gasPriceSlider">Gas Price ($ per litre):</label>
+	  <input id="gasPriceSlider" type="range" min="1" max="5" step="0.01" value="2.50" autocomplete="off"
+			 oninput="document.getElementById('gasPriceValue').textContent = this.value;">
+	  <span id="gasPriceValue">2.50</span>
+	</div>
+  </div>
+  
+<div id="gasPumpControls" style="text-align: left; margin: 10px 0;">
+	<label for="gasPumpCount">Number of Gas Pumps: </label>
+	<select id="gasPumpCount" onchange="updateGasPumpCount();">
+	  <option value="2">2</option>
+	  <option value="4">4</option>
+	  <option value="6">6</option>
+	  <option value="8">8</option>
+	  <option value="10">10</option>
+	  <option value="12">12</option>
+	  <option value="14">14</option>
+	  <option value="16">16</option>
+	  <option value="18">18</option>
+	  <option value="20">20</option>
+	  <option value="22">22</option>
+	  <option value="24" selected="selected">24</option>
+	</select>
+	<label for="gasWorkerCount">Number of Gas Station Worker: </label>
+	<select id="gasWorkerCount" onchange="updateGasWorkerCount();">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3" selected="selected">3</option>
+	</select>
+  </div>
+<!-- Statistic Data: Place this where you want the stats to appear (e.g., above the probability controls) -->
+<div id="statisticsData" style="margin-top:40px; text-align:center;">
+	<p id="statRejected">Average percentage of cars rejected: 0.0%</p>
+	<p id="statPumpDuration">Avg. Pump Duration (steps): 0.0</p>
+	<p id="statTimeInSystem">Avg. Time in System (steps): 0.0</p>
+	<p id="statPumpAmount">Avg. Pump Amount (liters): 0.0</p>
+</div>
+
+
+<!-- Rejection Chart Container -->
+<div id="rejectionChart" style="margin-top: 40px; text-align: center;">
+	<div id="rejectionChartContainer" style="width:100%; height:300px; margin: 0 auto;"></div>
+</div>
+<!-- Profit Chart Container -->
+<div id="profitChart" style="margin-top: -300px; text-align: center;">
+  <div id="profitChartContainer" style="width:100%; height:300px; margin: 0 auto;"></div>
+</div>
+
+  <a id="credits" href="https://limezu.itch.io/" style="position:absolute;bottom:0;right:0">
+    Icons by LimeZu
+  </a>
+  
+  <!-- Anything below this line should be a popup window or dialog or a late-loading library -->
+  
+  <script type="text/javascript" src="lib/Gas Station Simulation.js"></script>
+  
+</body>
+</html>
