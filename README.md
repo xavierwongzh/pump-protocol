@@ -71,7 +71,7 @@ cd pump-protocol
 
 # Open index.html in your browser
 # (Double-click or use your browser’s "Open File" menu)
-
+```
 ## 🎮 Usage
 
 1. **Start/Pause** the simulation by clicking anywhere on the simulation surface.  
