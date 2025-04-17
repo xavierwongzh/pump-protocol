@@ -3,7 +3,7 @@
 
 ### ESD Term 6 - 40.015: Simulation Modeling and Analysis 
 
-### An Agent-based modeling simulation for analyzing and optimizing petrol‐station operations.
+### An Agent-based modeling simulation for analyzing and optimizing petrol station operations.
 
 ## 🔍 Overview
 
@@ -12,12 +12,6 @@ The Pump Protocol lets you explore how arrival rates, pump counts, staffing leve
 - Visualize cars arriving, queuing, fueling, and departing.
 - Experiment with different system configurations.
 - Observe real‑time statistics and charts for rejection rates and profit.
-
----
-
-[![Live Demo](https://img.shields.io/badge/demo-online-blue)](https://pump-protocol-rho.vercel.app/)
-
----
 
 ## 🚀 Live Demo
 
