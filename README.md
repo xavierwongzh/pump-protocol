@@ -31,12 +31,12 @@ Try out the simulation in your browser:
 
 - **Interactive Controls**  
   - **Arrival Probability**: Adjust the likelihood that a new car arrives each tick.  
-  - **Departure Probability**: Set how quickly waiting cars give up and leave.  
+  - **Departure Probability**: Set how long it takes for driver to pay.  
   - **Gas Price**: Simulate revenue by changing the price per litre.  
   - **Animation Speed**: Slow down or speed up the simulation.
 
 - **Resource Configuration**  
-  - **Gas Pumps**: Choose between 2 and 24 pumps.  
+  - **Gas Pumps**: Choose between 2 and 24 pumps.
   - **Station Workers**: Configure 1–3 attendants.
 
 - **Live Metrics**  
@@ -71,3 +71,33 @@ cd pump-protocol
 
 # Open index.html in your browser
 # (Double-click or use your browser’s "Open File" menu)
+
+## 🎮 Usage
+
+1. **Start/Pause** the simulation by clicking anywhere on the simulation surface.  
+2. **Adjust sliders** for arrival/departure probability and gas price.  
+3. **Select** the number of pumps and workers from the dropdowns.  
+4. **Watch** the statistics update in real time and inspect the charts below the controls.  
+5. **Experiment** with different settings to find the optimal configuration!
+
+---
+
+## 📂 Project Structure
+
+- `/`  
+  - `audio/` – Sound effects (optional)  
+  - `fonts/` – Custom fonts  
+  - `images/` – Car, driver, environment assets  
+  - `lib/`  
+    - `d3.min.js` – D3.js visualization library  
+    - `Gas Station Simulation.js` – Simulation logic  
+  - `styles/`  
+    - `Gas Station Simulation.css` – Custom styles  
+  - `index.html` – Main entry point  
+  - `README.md` – This file  
+ 
+---
+
+## 🎨 Assets
+
+Assets by LimeZu: https://limezu.itch.io/
