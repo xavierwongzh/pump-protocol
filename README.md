@@ -84,17 +84,17 @@ cd pump-protocol
 
 ## 📂 Project Structure
 
-- `/`  
-  - `audio/` – Sound effects (optional)  
-  - `fonts/` – Custom fonts  
-  - `images/` – Car, driver, environment assets  
-  - `lib/`  
-    - `d3.min.js` – D3.js visualization library  
-    - `Gas Station Simulation.js` – Simulation logic  
-  - `styles/`  
-    - `Gas Station Simulation.css` – Custom styles  
-  - `index.html` – Main entry point  
-  - `README.md` – This file  
+        /
+        ├── audio/                   # Sound effects (optional)
+        ├── fonts/                   # Custom fonts
+        ├── images/                  # Car, driver, environment assets
+        ├── lib/
+        │   ├── d3.min.js            # D3.js visualization library
+        │   └── Gas Station Simulation.js  # Simulation logic
+        ├── styles/
+        │   └── Gas Station Simulation.css # Custom styles
+        ├── index.html               # Main entry point
+        └── README.md                # You are here
  
 ---
 
