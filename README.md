@@ -45,15 +45,6 @@ Try out the simulation in your browser:
 
 ---
 
-## 🛠️ Technologies
-
-- **Core**: HTML5, CSS3, JavaScript (ES6+)  
-- **Visualization**: [D3.js](https://d3js.org/)  
-- **Charting**: [Plotly.js](https://plotly.com/javascript/)  
-- **Assets**: SVG, PNG, GIF animations for cars and environment  
-
----
-
 ## 📦 Installation
 
 Just clone the repository and open `index.html`. It runs out of the box.
@@ -66,6 +57,9 @@ cd pump-protocol
 # Open index.html in your browser
 # (Double-click or use your browser’s "Open File" menu)
 ```
+
+---
+
 ## 🎮 Usage
 
 1. **Start/Pause** the simulation by clicking anywhere on the simulation surface.  
@@ -87,7 +81,7 @@ cd pump-protocol
     │   └── Gas Station Simulation.js  # Simulation logic
     ├── styles/
     │   └── Gas Station Simulation.css # Custom styles
-    ├── index.html               # Main entry point
+    ├── index.html               # The Simulation
     └── README.md                # You are here
  
 ---
