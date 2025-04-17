@@ -92,5 +92,4 @@ Assets by LimeZu: https://limezu.itch.io/
 
 ## 🎵 Music
 
-- **Class Klown**: “Matcha Latte”
 - **DM DOKURO**: “Silence Before the Storms”, “Sanctuary”
