@@ -13,6 +13,9 @@ The Pump Protocol lets you explore how arrival rates, pump counts, staffing leve
 - Experiment with different system configurations.
 - Observe real‑time statistics and charts for rejection rates and profit.
 
+## 🎥 Promo Video
+🔗 https://youtu.be/xpUBLs86Gzs
+
 ## 🚀 Live Demo
 
 Try out the simulation in your browser:
