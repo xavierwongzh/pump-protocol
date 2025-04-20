@@ -1,4 +1,5 @@
 # The Pump Protocol
+![Repository Image](/PumpProtocolLogo.png)
 ## Optimizing Petrol Station Efficiency Through Simulation
 
 ### ESD Term 6 - 40.015: Simulation Modeling and Analysis 
