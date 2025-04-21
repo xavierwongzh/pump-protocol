@@ -92,8 +92,8 @@ cd pump-protocol
 
 ## 🎨 Assets
 
-Assets by LimeZu: https://limezu.itch.io/
+- Assets by **LimeZu**: https://limezu.itch.io/
 
 ## 🎵 Music
 
-- **DM DOKURO**: “Silence Before the Storms”, “Sanctuary”
+- Music by **DM DOKURO**: “Silence Before the Storms”, “Sanctuary”
